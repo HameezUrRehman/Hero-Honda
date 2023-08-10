@@ -1,0 +1,192 @@
+.navbar-brand {
+  padding-left: 20px;
+}
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: black;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; */
+}
+.nav-link:hover {
+  font-weight: bold;
+  color: black;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: black;
+  font-weight: bold;
+}
+.shopping-cart {
+  position: relative;
+  padding-right: 60px;
+  top: 5px;
+}
+
+button:hover {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
+.cart-toggle-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  background-color: #ef1e21;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 20px auto;
+  width: 100%;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+  font: 20px sans-serif;
+
+  /* Uniform text field size */
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.btn:hover {
+  background-color: #ef1e21 !important;
+  color: #fff !important;
+}
+
+.fa-shopping-cart {
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.footer-column {
+  flex: 1;
+  margin-top: 15px;
+}
+
+.footer-column-1 {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.footer-column p {
+  margin-bottom: 0px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  text-align: right;
+}
+
+.link::before {
+  content: "|";
+  margin: 0 12px 0 0;
+}
+
+.footer-links li {
+  margin-right: 10px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+  .row {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .footer-column {
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 420px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .link::before {
+    display: none;
+  }
+}
