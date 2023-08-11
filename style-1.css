@@ -553,7 +553,7 @@ h4 {
   }
 }
 
-@media (min-width: 300px) and (max-width: 420px) {
+@media screen and (max-width: 420px) {
   .shopping-cart {
     margin-top: 10px;
   }
