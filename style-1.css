@@ -553,7 +553,7 @@ h4 {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media (min-width: 300px) and (max-width: 420px) {
   .shopping-cart {
     margin-top: 10px;
   }
@@ -580,8 +580,12 @@ h4 {
     width: 613px;
   }
 
-  .column {
-    flex-basis: calc(49% - 0px);
+ .column {
+    width: 100%;
+  }
+
+  .column img {
+    width: 48%;
   }
 
   .main-text {
