@@ -324,7 +324,7 @@ h4 {
 }
 
 .column {
-  flex-basis: calc(50% - 10px);
+  width: 50%;
   margin: 10px auto;
 }
 
