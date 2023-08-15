@@ -563,13 +563,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     </section>
 
     <!-- Image gallery -->
+    <button id="toggleButton">Hide</button>
+    <button id="toggleButtonshow" style="display: none;">Show</button>
 
-    
-    <div class="container">
+    <div id="hiddenSection">
+    <div class="container" >
+      
       <section id="mySection" class="section">
       <div class="section-content">
-        <button onclick="toggleSection()" class="hide-section">Hide</button>
-      <h2 class="Main-Text" style="color: white;margin-top: -54px;">Image Gallery</h2>
+        
+      <h2 class="Main-Text" style="color: white;">Image Gallery</h2>
       
       <div class="image-container">
         <div class="row">
@@ -663,16 +666,41 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       </div>
     </div>
   </div>
+  </div>
   </section>
-  <section id="mySection" class="section">
-    <button onclick="toggleSection()" class="show-section">Show</button>
-</section>
-
+    </div>
   <script>
-    function toggleSection() {
-  var section = document.getElementById("mySection");
-  section.classList.toggle("hidden");
-}
+ document.getElementById('toggleButton').addEventListener('click', function() {
+  var section = document.getElementById('hiddenSection');
+  // if (section.style.display === 'none') {
+  //   section.style.display = 'block';
+  // } else {
+
+    var btnShow = document.getElementById('toggleButtonshow');
+    var btnHide = document.getElementById('toggleButton');
+    btnShow.style.display = 'block';
+    section.style.display = 'none';
+    btnHide.style.display = 'none';
+    //}
+});
+
+document.getElementById('toggleButtonshow').addEventListener('click', function() {
+  var section = document.getElementById('hiddenSection');
+  // if (section.style.display === 'none') {
+  //   section.style.display = 'block';
+  // } else {
+    
+    var btnShow = document.getElementById('toggleButtonshow');
+    var btnHide = document.getElementById('toggleButton');
+    btnShow.style.display = 'none';
+    section.style.display = 'block';
+    btnHide.style.display = 'block';
+
+
+   
+    //}
+});
+
   </script>
 
     <!-- Modal -->
@@ -691,18 +719,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         modalImage.src = imageUrl;
       }
 
-      // Close the modal
-      function closeModal() {
-        var modal = document.getElementById("myModal");
-        modal.style.display = "none";
-      }
+      
     </script>
 
     <!-- Video section -->
 
     <div class="container" style="margin-bottom: 20px;">
       <section class="video-section">
-        <h2 class="section-heading" style="color: white;margin-top: -55px;">Video</h2>
+        <h2 class="Main-Text" style="color: white;margin-top: 18px;">Video</h2>
         <div class="video-container" style="margin-top: 40px;">
         <video width="100%" height="100%" controls>
           <source src="./Content/Xpulse-ad.mp4" type="video/mp4" />
